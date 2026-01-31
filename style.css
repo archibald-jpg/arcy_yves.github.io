@@ -1,3 +1,23 @@
+/* Activ Grotesk Regular */
+@font-face {
+    font-family: "Activ Grotesk";
+    src: url("fonts/ActivGrotesk-Regular.woff2") format("woff2"),
+         url("fonts/ActivGrotesk-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Activ Grotesk Bold */
+@font-face {
+    font-family: "Activ Grotesk";
+    src: url("fonts/ActivGrotesk-Bold.woff2") format("woff2"),
+         url("fonts/ActivGrotesk-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 /* Basic reset */
 body {
     margin: 0;
