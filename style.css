@@ -1,4 +1,8 @@
-/* Activ Grotesk Regular */
+/* -------------------------------
+   1. Custom Font: Activ Grotesk
+---------------------------------*/
+
+/* Regular weight */
 @font-face {
     font-family: "Activ Grotesk";
     src: url("fonts/ActivGrotesk-Regular.woff2") format("woff2"),
@@ -7,16 +11,92 @@
     font-style: normal;
 }
 
-/* Apply Activ Grotesk globally */
+/* Bold weight */
+@font-face {
+    font-family: "Activ Grotesk";
+    src: url("fonts/ActivGrotesk-Bold.woff2") format("woff2"),
+         url("fonts/ActivGrotesk-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* -------------------------------
+   2. Global Styles
+---------------------------------*/
 body {
     font-family: "Activ Grotesk", Arial, sans-serif;
     font-weight: 400; /* Regular by default */
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
-/* Headings and buttons */
-h1, h2, .nav a {
-    font-weight: 700; /* Use Bold weight */
+/* Smooth scrolling for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------
+   3. Navigation Bar
+---------------------------------*/
+.nav {
+    background-color: #000; /* Black bar */
+    padding: 30px 0;
+    position: sticky; /* Stays at top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Links look like buttons */
+.nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700; /* Bold */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #333; /* Dark gray on hover */
+}
+
+/* -------------------------------
+   4. Page Content
+---------------------------------*/
+.content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-weight: 700; /* Bold headings */
+}
+
+p {
+    font-weight: 400; /* Regular paragraph text */
+    line-height: 1.6;
+}
+
+/* -------------------------------
+   5. Buttons (optional extra style)
+---------------------------------*/
+.button {
+    background-color: #000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333;
 }
