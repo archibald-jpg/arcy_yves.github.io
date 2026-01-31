@@ -7,41 +7,16 @@
     font-style: normal;
 }
 
-/* Activ Grotesk Bold */
-@font-face {
-    font-family: "Activ Grotesk";
-    src: url("fonts/ActivGrotesk-Bold.woff2") format("woff2"),
-         url("fonts/ActivGrotesk-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-
-/* Basic reset */
+/* Apply Activ Grotesk globally */
 body {
+    font-family: "Activ Grotesk", Arial, sans-serif;
+    font-weight: 400; /* Regular by default */
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Navigation */
-.nav {
-    padding: 40px;
-}
-
-.nav a {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 12px 24px;
-    text-decoration: none;
-    color: white;
-    background-color: #000;
-    border-radius: 4px;
-}
-
-/* Page content */
-.content {
-    max-width: 700px;
-    margin: 60px auto;
+/* Headings and buttons */
+h1, h2, .nav a {
+    font-weight: 700; /* Use Bold weight */
 }
