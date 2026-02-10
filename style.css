@@ -12,19 +12,17 @@ body {
     font-family: "Activ Grotesk", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4; /* page background color */
+    background: #dddddd; /* entire page background light grey */
+    text-align: center;
 }
 
-/* 3. Navigation container (no background) */
+/* 3. Navigation container (horizontal across top) */
 .nav {
-    position: absolute;        /* place top-right */
-    top: 20px;
-    right: 20px;
     display: flex;
-    flex-direction: column;    /* vertical stack */
-    gap: 20px;                 /* space between buttons */
-    z-index: 10;               /* above everything */
-    background: none;          /* no nav background at all */
+    justify-content: center;  /* horizontal center, change to flex-end if you want right-aligned */
+    gap: 30px;                /* space between buttons */
+    padding: 30px 0;          /* spacing from top of page */
+    background: none;         /* no background for nav itself */
 }
 
 /* 4. Buttons themselves */
@@ -32,7 +30,7 @@ body {
     text-decoration: none;     /* remove underline */
     color: #000000;            /* black text */
     font-weight: 400;          /* Regular weight */
-    background-color: #dddddd; /* light grey background */
-    padding: 12px 25px;
-    border-radius: 5px;        /* slightly rounded corners */
+    background: none;          /* no background for buttons */
+    padding: 12px 25px;        /* spacing around text */
+    border-radius: 5px;        /* optional rounded corners */
 }
