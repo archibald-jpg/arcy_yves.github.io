@@ -14,15 +14,16 @@ body {
     padding: 0;
     background: #dddddd; /* entire page background light grey */
     text-align: center;
+    color: #000000;
 }
 
 /* 3. Navigation container (horizontal across top) */
 .nav {
     display: flex;
-    justify-content: center;  /* horizontal center, change to flex-end if you want right-aligned */
+    justify-content: center;  /* horizontal center; use flex-end for right-align */
     gap: 30px;                /* space between buttons */
-    padding: 30px 0;          /* spacing from top of page */
-    background: none;         /* no background for nav itself */
+    padding: 30px 0;          /* spacing from top */
+    background: none;         /* nav has no background */
 }
 
 /* 4. Buttons themselves */
@@ -30,7 +31,27 @@ body {
     text-decoration: none;     /* remove underline */
     color: #000000;            /* black text */
     font-weight: 400;          /* Regular weight */
-    background: none;          /* no background for buttons */
+    background: none;          /* buttons have no background */
     padding: 12px 25px;        /* spacing around text */
     border-radius: 5px;        /* optional rounded corners */
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #555555;            /* slightly darker on hover */
+}
+
+/* 5. Page content */
+h1 {
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 80px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 20px auto;
 }
