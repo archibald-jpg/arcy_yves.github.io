@@ -12,29 +12,31 @@ body {
     font-family: "Activ Grotesk", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #dddddd; /* entire page background light grey */
+    background: #dddddd;  /* light grey page background */
     text-align: center;
     color: #000000;
 }
 
-/* 3. Navigation container (horizontal across top) */
+/* 3. Navigation container (horizontal, top-right) */
 .nav {
     display: flex;
-    flex-direction: row;      /* horizontal row */
-    justify-content: center;  /* center across page; use flex-end for right-aligned */
-    gap: 30px;                /* spacing between buttons */
-    padding: 30px 0;          /* spacing from top of page */
-    background: none;         /* nav has no background */
+    flex-direction: row;       /* horizontal buttons */
+    justify-content: flex-end; /* align buttons to the right */
+    gap: 30px;                 /* space between buttons */
+    padding: 20px 50px;        /* top and side spacing */
+    position: absolute;        /* keep at top of page */
+    top: 0;
+    right: 0;
 }
 
 /* 4. Buttons themselves */
 .nav a {
     text-decoration: none;     /* remove underline */
     color: #000000;            /* black text */
-    font-weight: 400;          /* Regular weight */
+    font-weight: 400;          /* regular */
     background: none;          /* no button background */
     padding: 12px 25px;        /* spacing around text */
-    border-radius: 5px;        /* optional rounded corners */
+    border-radius: 5px;
     transition: color 0.2s;
 }
 
@@ -46,7 +48,7 @@ body {
 h1 {
     font-weight: 400;
     font-size: 48px;
-    margin-top: 80px;
+    margin-top: 150px;         /* push content below nav */
 }
 
 p {
