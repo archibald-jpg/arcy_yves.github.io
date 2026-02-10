@@ -20,9 +20,10 @@ body {
 /* 3. Navigation container (horizontal across top) */
 .nav {
     display: flex;
-    justify-content: center;  /* horizontal center; use flex-end for right-align */
-    gap: 30px;                /* space between buttons */
-    padding: 30px 0;          /* spacing from top */
+    flex-direction: row;      /* horizontal row */
+    justify-content: center;  /* center across page; use flex-end for right-aligned */
+    gap: 30px;                /* spacing between buttons */
+    padding: 30px 0;          /* spacing from top of page */
     background: none;         /* nav has no background */
 }
 
@@ -31,7 +32,7 @@ body {
     text-decoration: none;     /* remove underline */
     color: #000000;            /* black text */
     font-weight: 400;          /* Regular weight */
-    background: none;          /* buttons have no background */
+    background: none;          /* no button background */
     padding: 12px 25px;        /* spacing around text */
     border-radius: 5px;        /* optional rounded corners */
     transition: color 0.2s;
