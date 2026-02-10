@@ -1,27 +1,35 @@
-/* Navigation Bar */
+/* 1. Load Activ Grotesk Regular */
+@font-face {
+    font-family: "Activ Grotesk";
+    src: url("fonts/ActivGrotesk-Regular.woff2") format("woff2"),
+         url("fonts/ActivGrotesk-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 2. Global body style */
+body {
+    font-family: "Activ Grotesk", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Navigation buttons (black text on light grey) */
 .nav {
-    position: absolute;        /* stays on top of canvas */
+    position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
-    flex-direction: column;    /* vertical stack, or row if you want */
-    gap: 40px;                 /* spacing between buttons */
-    z-index: 10;               /* ensure buttons are above canvas */
+    flex-direction: column;
+    gap: 20px; /* space between buttons */
+    z-index: 10; /* ensures buttons appear above any canvas */
 }
 
-/* Buttons style */
 .nav a {
-    display: inline-block;
-    text-decoration: none;                     /* remove underline */
-    color: #000000;                            /* black text */
-    font-weight: 400;                          /* Regular */
-    padding: 12px 25px;
-    border-radius: 5px;
-    background-color: rgba(220, 220, 220, 0.9); /* light grey, mostly opaque */
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect */
-.nav a:hover {
-    background-color: rgba(200, 200, 200, 1); /* slightly darker grey */
+    text-decoration: none;           /* remove underline */
+    color: #000000;                  /* black text */
+    font-weight: 400;                /* Regular weight */
+    background-color: #dddddd;       /* light grey background */
+    padding: 12px 25px;              /* padding inside button */
+    border-radius: 5px;              /* slightly rounded corners */
 }
