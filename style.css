@@ -1,76 +1,26 @@
-/* -------------------------------
-   1. Custom Font: Activ Grotesk
----------------------------------*/
-
-/* Regular weight only */
-@font-face {
-    font-family: "Activ Grotesk";
-    src: url("fonts/ActivGrotesk-Regular.woff2") format("woff2"),
-         url("fonts/ActivGrotesk-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* -------------------------------
-   2. Global Styles
----------------------------------*/
-body {
-    font-family: "Activ Grotesk", Arial, sans-serif;
-    font-weight: 400; /* Regular for all text */
-    margin: 0;
-    padding: 0;
-    text-align: left; /* Align text to left now, nav will be right */
-    background-color: #f4f4f4;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* -------------------------------
-   3. Navigation Bar (Right-Aligned)
----------------------------------*/
+/* Navigation Bar */
 .nav {
-    background-color: #000;        /* Black bar */
-    padding: 30px 20px;
-    position: sticky;              /* Stays at top */
-    top: 0;
-    width: 100%;
-    display: flex;                 /* Flexbox for alignment */
-    justify-content: flex-end;     /* Move buttons to right */
-    gap: 40px;                     /* Spacing between buttons */
-    box-sizing: border-box;
-    z-index: 1000;
+    position: absolute; /* stays above canvas */
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column; /* stack vertically, can change to row if you like */
+    gap: 40px; /* spacing between buttons */
+    z-index: 10; /* ensures buttons are above canvas */
 }
 
+/* Buttons: black text on grey background */
 .nav a {
-    text-decoration: none;         /* Remove underline */
-    color: white;
-    font-weight: 400;              /* Regular weight */
+    text-decoration: none;          /* remove underline */
+    color: #000000;                 /* black text */
+    font-weight: 400;               /* Regular weight */
     padding: 12px 25px;
     border-radius: 5px;
-    background-color: #000;        /* Match nav bar */
+    background-color: rgba(200, 200, 200, 0.7); /* light grey, slightly transparent */
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect */
 .nav a:hover {
-    background-color: #333;        /* Dark gray on hover */
-}
-
-/* -------------------------------
-   4. Page Content
----------------------------------*/
-.content {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-h1, h2 {
-    font-weight: 400; /* Regular headings */
-}
-
-p {
-    font-weight: 400;
-    line-height: 1.6;
+    background-color: rgba(180, 180, 180, 0.9); /* slightly darker grey on hover */
 }
